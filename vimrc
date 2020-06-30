@@ -88,6 +88,10 @@ inoremap <Down>  <ESC>:echoe "Use j"<CR>
 " Personal Updates
 "==================
 
+" setup colorscheme
+colorscheme molokai
+set t_Co=256 " force 256 color
+
 " setup undo folder
 set undofile
 set undodir=~/.vim/undo-history
