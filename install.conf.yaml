@@ -7,8 +7,7 @@
 - link:
     ~/.tmux.conf: tmux.conf
     ~/.vimrc: vimrc
-    ~/.bashrc: bashrc
-    ~/.bash_profile: bash_profile
+    ~/.zshrc: zshrc
 
 - create:
     - ~/.vim/undo-history
