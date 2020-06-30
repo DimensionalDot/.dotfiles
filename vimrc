@@ -1,3 +1,8 @@
+
+"======================
+" MissingSemester Base
+"======================
+
 " Comments in Vimscript start with a `"`.
 
 " If you open this file in Vim, it'll be syntax highlighted for you.
@@ -78,3 +83,11 @@ inoremap <Left>  <ESC>:echoe "Use h"<CR>
 inoremap <Right> <ESC>:echoe "Use l"<CR>
 inoremap <Up>    <ESC>:echoe "Use k"<CR>
 inoremap <Down>  <ESC>:echoe "Use j"<CR>
+
+"==================
+" Personal Updates
+"==================
+
+" setup undo folder
+set undofile
+set undodir=~/.vim/undo-history
