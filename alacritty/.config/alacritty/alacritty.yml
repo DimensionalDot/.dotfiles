@@ -1,0 +1,91 @@
+env:
+  # required for tmux colors
+  TERM: alacritty-direct
+
+window:
+  # dimensions:
+  #   columns: 80
+  #   lines: 24
+
+  option_as_alt: OnlyLeft
+
+  # transparent config
+  decorations: buttonless
+  opacity: 0.90
+
+font:
+  normal:
+    family: SF Mono Nerd
+    style: Regular
+
+  bold:
+    family: SF Mono Nerd
+    style: Bold
+
+  italic:
+    family: SF Mono Nerd
+    style: Regular Italic
+
+  bold italic:
+    family: SF Mono Nerd
+    style: Bold Italic
+
+  size: 14
+  offset:
+    x: 1
+    y: 1
+
+colors:
+  primary:
+    background: "#1E1E1E"
+    foreground: "#FFFFFF"
+
+  cursor:
+    text: CellForeground
+    cursor: "#9D9D9D"
+
+  # taken from default terminal.app colors (which are actually inpromperly displaying the default ANSI colors)
+  normal:
+    black: "#000000"
+    red: "#C85339"
+    green: "#68C34B"
+    yellow: "#F0ED53"
+    blue: "#634AED"
+    magenta: "#D45BDB"
+    cyan: "#66C2CE"
+    white: "#D1D1D1"
+  bright:
+    black: "#909090"
+    red: "#EE5A3A"
+    green: "#75E852"
+    yellow: "#F0ED53"
+    blue: "#D09BF9"
+    magenta: "#ED5FF8"
+    cyan: "#73F1F2"
+    white: "#ECEDED"
+
+# bell:
+#   color: "#ffffff"
+#   duration: 100
+
+key_bindings:
+  # from https://github.com/alacritty/alacritty/wiki/Keyboard-mappings#macos
+  # - { key: Comma,     mods: Command,      command: {program: "sh", args: ["-c","open ~/.config/alacritty/alacritty.yml"]}}
+  - { key: N,        mods: Command, action: CreateNewWindow}
+  - { key: N,        mods: Command|Shift, action: SpawnNewInstance}
+  # delete line (relies on zsh rebind of ^U to backward-kill-line instead of kill-whole-line, see `$ bindkey`)
+  - { key: Back,     mods: Command, chars: "\x15" } 
+  - { key: Left,     mods: Alt,     chars: "\eb"}  # one word left
+  - { key: Right,    mods: Alt,     chars: "\ef"}  # one word right
+  - { key: Left,     mods: Command, chars: "\eOH"} # Home
+  - { key: Right,    mods: Command, chars: "\eOF"} # End
+  - { key: Return,   mods: Control|Shift, chars: "\x0c\n"} # clear and return
+  # - { key: Minus,    mods: Command,      action: DecreaseFontSize       }
+  # - { key: Equals,   mods: Command,      action: IncreaseFontSize       }
+
+  # no longer needed thanks to option_as_alt ?? (leaving for now...)
+  # passes alt+(j|J|k|K) through (for nvim)
+  # - { key: J,  mods: Alt, chars: "\ej" }
+  # - { key: J,  mods: Alt|Shift, chars: "\eJ" }
+  # - { key: K,  mods: Alt, chars: "\ek" }
+  # - { key: K,  mods: Alt|Shift, chars: "\eK" }
