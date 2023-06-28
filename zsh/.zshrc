@@ -15,16 +15,6 @@ export TERMINFO_DIRS="$TERMINFO_DIRS:$HOME/.local/share/terminfo"
 
 export LSCOLORS=Exfxcxdxbxegedabagacad
 
-work() {
-    source "create-mount"
-}
-krow() {
-    if [[ $(pwd) =~ "/Volumes/$1" ]]; then
-        cd
-    fi
-    diskutil umount /Volumes/$1
-}
-
 # vcs prompt
 autoload -Uz vcs_info
 precmd_functions+=(vcs_info) # how did this work (after a 2nd source) w/o the parens?
