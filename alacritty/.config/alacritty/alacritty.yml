@@ -15,19 +15,19 @@ window:
 
 font:
   normal:
-    family: SF Mono Nerd
+    family: SFMono Nerd Font
     style: Regular
 
   bold:
-    family: SF Mono Nerd
+    family: SFMono Nerd Font
     style: Bold
 
   italic:
-    family: SF Mono Nerd
+    family: SFMono Nerd Font
     style: Regular Italic
 
   bold italic:
-    family: SF Mono Nerd
+    family: SFMono Nerd Font
     style: Bold Italic
 
   size: 14
