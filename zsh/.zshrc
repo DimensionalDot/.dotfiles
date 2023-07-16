@@ -27,6 +27,7 @@ alias grep='grep --color'
 
 # keymaps
 bindkey \^U backward-kill-line
+bindkey -s  "tmux-sessionizer\n"
 
 # opam configuration
 [[ ! -r /Users/henry/.opam/opam-init/init.zsh ]] || source /Users/henry/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null
