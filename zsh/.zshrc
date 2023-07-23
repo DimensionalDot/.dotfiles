@@ -10,9 +10,6 @@ PATH=$PATH:$HOME/.ghcup/bin
 PATH=$PATH:$HOME/.cabal/bin
 export PATH="/usr/local/opt/curl/bin:$PATH"
 
-# for the sake of tmux-256color
-export TERMINFO_DIRS="$TERMINFO_DIRS:$HOME/.local/share/terminfo"
-
 export LSCOLORS=Exfxcxdxbxegedabagacad
 
 # vcs prompt
