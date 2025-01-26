@@ -1,0 +1,99 @@
+[colors.bright]
+black = "#909090"
+blue = "#D09BF9"
+cyan = "#73F1F2"
+green = "#75E852"
+magenta = "#ED5FF8"
+red = "#EE5A3A"
+white = "#ECEDED"
+yellow = "#F0ED53"
+
+[colors.cursor]
+cursor = "#9D9D9D"
+text = "CellForeground"
+
+[colors.normal]
+black = "#000000"
+blue = "#634AED"
+cyan = "#66C2CE"
+green = "#68C34B"
+magenta = "#D45BDB"
+red = "#C85339"
+white = "#D1D1D1"
+yellow = "#F0ED53"
+
+[colors.primary]
+background = "#1E1E1E"
+foreground = "#FFFFFF"
+
+[env]
+TERM = "alacritty-direct"
+
+[font]
+size = 14
+
+[font.bold]
+family = "SFMono Nerd Font"
+style = "Bold"
+
+[font.bold_italic]
+family = "SFMono Nerd Font"
+style = "Bold Italic"
+
+[font.italic]
+family = "SFMono Nerd Font"
+style = "Regular Italic"
+
+[font.normal]
+family = "SFMono Nerd Font"
+style = "Regular"
+
+[font.offset]
+x = 1
+y = 1
+
+[[keyboard.bindings]]
+action = "CreateNewWindow"
+key = "N"
+mods = "Command"
+
+[[keyboard.bindings]]
+action = "SpawnNewInstance"
+key = "N"
+mods = "Command|Shift"
+
+[[keyboard.bindings]]
+chars = "\u0015"
+key = "Back"
+mods = "Command"
+
+[[keyboard.bindings]]
+chars = "\u001Bb"
+key = "Left"
+mods = "Alt"
+
+[[keyboard.bindings]]
+chars = "\u001Bf"
+key = "Right"
+mods = "Alt"
+
+[[keyboard.bindings]]
+chars = "\u001BOH"
+key = "Left"
+mods = "Command"
+
+[[keyboard.bindings]]
+chars = "\u001BOF"
+key = "Right"
+mods = "Command"
+
+[[keyboard.bindings]]
+chars = """
+\f
+"""
+key = "Return"
+mods = "Control|Shift"
+
+[window]
+opacity = 0.9
+option_as_alt = "OnlyLeft"

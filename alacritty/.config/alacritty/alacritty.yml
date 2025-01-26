@@ -10,7 +10,6 @@ window:
   option_as_alt: OnlyLeft
 
   # transparent config
-  decorations: buttonless
   opacity: 0.90
 
 font:
