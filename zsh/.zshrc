@@ -8,6 +8,7 @@ PATH=/usr/local/opt/llvm/bin:$PATH
 PATH=$PATH:$HOME/.local/bin
 PATH=$PATH:$HOME/.ghcup/bin
 PATH=$PATH:$HOME/.cabal/bin
+PATH=$PATH:$HOME/go/bin
 export PATH="/usr/local/opt/curl/bin:$PATH"
 
 export LSCOLORS=Exfxcxdxbxegedabagacad
@@ -21,6 +22,7 @@ zstyle ':vcs_info:git:*' formats '(%F{red}%b%f)'
 
 alias ls='ls --color'
 alias grep='grep --color'
+alias air='air -build.stop_on_error=true -misc.clean_on_exit=true -screen.clear_on_rebuild=true'
 
 # keymaps
 bindkey \^U backward-kill-line
