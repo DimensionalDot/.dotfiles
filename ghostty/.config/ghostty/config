@@ -1,0 +1,22 @@
+theme = Apple System Colors
+
+font-family = SF Mono 
+font-style = Semi-Bold
+font-style-italic = Semi-Bold Italic
+font-size = 14
+
+background-opacity = 0.9
+
+window-padding-x = 0
+window-padding-y = 0
+
+window-inherit-working-directory = false
+
+cursor-style-blink = false
+
+title = "Ghostty"
+macos-titlebar-proxy-icon = hidden
+
+keybind = ctrl+shift+enter=text:\x0c\x0d
+# ergo for vi emulation (ctrl+[ to ESC)
+keybind = ctrl+left_bracket=text:\x1b
