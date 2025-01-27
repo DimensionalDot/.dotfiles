@@ -28,6 +28,9 @@ alias air='air -build.stop_on_error=true -misc.clean_on_exit=true -screen.clear_
 bindkey \^U backward-kill-line
 bindkey -s  "tmux-sessionizer\n"
 
+#zsh-vi-mode package
+source /usr/local/opt/zsh-vi-mode/share/zsh-vi-mode/zsh-vi-mode.plugin.zsh
+
 # opam configuration
 [[ ! -r /Users/henry/.opam/opam-init/init.zsh ]] || source /Users/henry/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null
 export PATH="/usr/local/opt/ruby/bin:$PATH"
