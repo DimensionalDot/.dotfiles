@@ -24,12 +24,15 @@ alias ls='ls --color'
 alias grep='grep --color'
 alias air='air -build.stop_on_error=true -misc.clean_on_exit=true -screen.clear_on_rebuild=true'
 
-# keymaps
+# keybinds for Non-ZVM (may be overwritten by ZVM source below)
 bindkey \^U backward-kill-line
-bindkey -s  "tmux-sessionizer\n"
 
 #zsh-vi-mode package
+ZVM_INIT_MODE=sourcing # prevents overwriting of my keybinds below this
 source /usr/local/opt/zsh-vi-mode/share/zsh-vi-mode/zsh-vi-mode.plugin.zsh
+
+# keymaps during/overwriting zvm
+bindkey -s \^F "tmux-sessionizer\n"
 
 # opam configuration
 [[ ! -r /Users/henry/.opam/opam-init/init.zsh ]] || source /Users/henry/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null
