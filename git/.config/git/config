@@ -1,0 +1,26 @@
+[user]
+    email = "dimensionaldot@gmail.com"
+    name = "DimensionalDot"
+
+[core]
+    editor = "nvim"
+
+; START: 1Password provided snippet
+[user]
+  signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAINNm75DJLqLtdTevSlV1UfDwUldF8Z10XnxkCjP06Ml2
+
+[gpg]
+  format = ssh
+
+[gpg "ssh"]
+  program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign" ; MacOS only
+
+[commit]
+  gpgsign = true
+; END: 1Password provided snippet
+
+[gpg "ssh"]
+  allowedsignersfile="~/.config/git/allowed_signers"
+
+[init]
+    defaultbranch = "main"
