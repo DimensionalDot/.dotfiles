@@ -25,7 +25,12 @@ alias grep='grep --color'
 alias air='air -build.stop_on_error=true -misc.clean_on_exit=true -screen.clear_on_rebuild=true'
 
 # widgets
-run_sessionizer() tmux-sessionizer
+run_sessionizer() {
+    # undo zshzle fd overwrites
+    exec </dev/tty
+    exec <&1
+    tmux-sessionizer
+}
 zle -N run_sessionizer
 
 # keybinds for Non-ZVM (may be overwritten by ZVM source below)
