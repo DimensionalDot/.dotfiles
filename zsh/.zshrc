@@ -29,7 +29,7 @@ run_sessionizer() {
     # undo zshzle fd overwrites
     exec </dev/tty
     exec <&1
-    tmux-sessionizer
+    tmux-sessionizer > /dev/null
 }
 zle -N run_sessionizer
 
