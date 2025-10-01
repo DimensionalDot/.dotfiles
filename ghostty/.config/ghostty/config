@@ -1,9 +1,9 @@
 theme = Apple System Colors
 
 font-family = SF Mono 
-font-style = Semi-Bold
-font-style-italic = Semi-Bold Italic
-font-size = 14
+font-style = Bold
+font-style-italic = Bold Italic
+font-size = 15
 
 background-opacity = 0.9
 
